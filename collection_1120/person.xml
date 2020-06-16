@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<students>
+    <student>
+        <name>雷军</name>
+        <age>55</age>
+        <phone>111</phone>
+    </student>
+    <student>
+        <name>马化腾</name>
+        <age>45</age>
+        <phone>222</phone>
+    </student>
+</students>

@@ -1,0 +1,9 @@
+#editUser{
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    z-index: 2;
+    border: 1px solid red;
+    background-color: gray;
+}

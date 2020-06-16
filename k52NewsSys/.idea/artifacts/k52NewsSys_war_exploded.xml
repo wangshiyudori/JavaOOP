@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="k52NewsSys:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/k52NewsSys_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="k52NewsSys/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="k52NewsSys" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

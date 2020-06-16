@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>FindUserByNameServlet</servlet-name>
+        <servlet-class>com.bd.servlet.FindUserByNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindUserByNameServlet</servlet-name>
+        <url-pattern>/FindUserByName</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>FindAllUsersServlet</servlet-name>
+        <servlet-class>com.bd.servlet.FindAllUsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindAllUsersServlet</servlet-name>
+        <url-pattern>/FindAllUsers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetAllUserServlet</servlet-name>
+        <servlet-class>com.bd.servlet.GetAllUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAllUserServlet</servlet-name>
+        <url-pattern>/GetAllUser</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AddUserServlet</servlet-name>
+        <servlet-class>com.bd.servlet.AddUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUserServlet</servlet-name>
+        <url-pattern>/AddUser</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>com.bd.servlet.DeleteUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/DeleteUser</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <servlet-class>com.bd.servlet.UpdateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <url-pattern>/UpdateUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetOneByIdUserServlet</servlet-name>
+        <servlet-class>com.bd.servlet.GetOneByIdUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetOneByIdUserServlet</servlet-name>
+        <url-pattern>/GetOneByIdUser</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Custom DataGrid Pager - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/CustomDataGridPager/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/CustomDataGridPager/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/CustomDataGridPager/demo/demo.css">
+    <script type="text/javascript" src="static/css/CustomDataGridPager/jquery.min.js"></script>
+    <script type="text/javascript" src="static/css/CustomDataGridPager/jquery.easyui.min.js"></script>
+
+</head>
+<body>
+<!--<h2>Custom DataGrid Pager</h2>-->
+<!--<p>You can append some buttons to the standard datagrid pager bar.</p>-->
+
+<!--<div style="margin:20px 0;"></div>-->
+<table id="dg" title="Custom DataGrid Pager" style="width:700px;height:250px">
+    <thead>
+    <tr>
+        <th data-options="field:'userID',width:80">userID</th>
+        <th data-options="field:'userName',width:100">userName</th>
+        <th data-options="field:'userPwd',width:80,align:'right'">userPwd</th>
+    </tr>
+    </thead>
+</table>
+<script type="text/javascript">
+    $(function () {
+
+        $("#dg").datagrid({
+            title: "定制分页数据表格",
+            singleSelect: true,
+            // collapsible: true,
+			// fitColumns:true,
+			rownumbers:true,
+			// fit:true,
+			pagination:true,
+			pageSize:5,
+			pageList:[5,10,20],
+			url:'./GetAllUser'
+        })
+
+        var pager = $('#dg').datagrid().datagrid('getPager');	// get the pager of datagrid
+        pager.pagination({
+            buttons: [{
+                iconCls: 'icon-search',
+                handler: function () {
+                    alert('search');
+                }
+            }, {
+                iconCls: 'icon-add',
+                handler: function () {
+                    alert('add');
+                }
+            }, {
+                iconCls: 'icon-edit',
+                handler: function () {
+                    alert('edit');
+                }
+            }]
+        });
+    })
+</script>
+</body>
+</html>

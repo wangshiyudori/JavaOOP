@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>宠物医院管理系统</title>
+    <link rel="stylesheet" href="./layUIsrc/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="./datagridStatic/css/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./datagridStatic/css/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="./datagridStatic/css/demo.css">
+    <script type="text/javascript" src="./datagridStatic/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./datagridStatic/js/jquery.easyui.min.js"></script>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">layui 后台布局</div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item"><a href="">控制台</a></li>
+            <li class="layui-nav-item"><a href="">商品管理</a></li>
+            <li class="layui-nav-item"><a href="">用户</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">其它系统</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">邮件管理</a></dd>
+                    <dd><a href="">消息管理</a></dd>
+                    <dd><a href="">授权管理</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    贤心
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">安全设置</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">退了</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:;">用户系统</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">列表一</a></dd>
+                        <dd><a href="javascript:;">列表二</a></dd>
+                        <dd><a href="javascript:;">列表三</a></dd>
+                        <dd><a href="">超链接</a></dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">科室</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">兽医</a></dd>
+                        <dd><a href="javascript:;">来诊宠物</a></dd>
+                        <dd><a href="">超链接</a></dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">宠物病例记录</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">2020年第一季度病例</a></dd>
+                        <dd><a href="javascript:;">2020年第二季度病例</a></dd>
+                        <dd><a href="">超链接</a></dd>
+                    </dl>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px;">
+
+<!--            <div style="margin:20px 0;"></div>-->
+            <table id="dg" class="easyui-datagrid" style="width:700px;height:290px">
+                <thead>
+                <tr>
+                    <th data-options="field:'typeID',width:80">类型ID</th>
+                    <th data-options="field:'typeName',width:100">类型名称</th>
+                </tr>
+                </thead>
+            </table>
+
+            <div id="toolbar">
+                <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="insertNewsType()">新增</a>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editNewsType()">编辑</a>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="deleteNewsType()">删除</a>
+            </div>
+
+            <div id="dlg" class="easyui-dialog" title="新闻类别管理" data-options="iconCls:'icon-save'"
+                 style="width:400px;height:200px;padding:10px">
+                <div class="ftitle">添加新闻类别</div>
+                <form id="fm" method="post">
+                    <div class="fitem">
+                        <label>类别ID：</label>
+                        <input name="typeID" type="text">
+                    </div>
+
+                    <div class="fitem">
+                        <label>类别名称：</label>
+                        <input name="typeName" class="easyui-validatebox" required="true">
+                    </div>
+
+                </form>
+                <div id="dlg-buttons">
+                    <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="saveNewsType()">Save</a>
+                    <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')">Cancel</a>
+                </div>
+            </div>
+
+
+            <script type="text/javascript">
+                function insertNewsType() {
+                    $('#dlg').dialog('open').dialog('setTitle', '新增新闻类别');
+                    $('#fm').form('clear');
+                    url = './api/v1.0/NewsType';
+                }
+
+                //点击编辑按钮
+                function editNewsType() {
+                    var row = $('#dg').datagrid('getSelected');
+                    if (row) {
+                        $('#dlg').dialog('open').dialog('setTitle', '编辑新闻类别');
+                        $('#fm').form('load', row);
+                        url = './api/v1.0/NewsType';
+                    }
+                }
+
+                //通过ajax进行数据的添加，添加完之后重新请求数据
+                function saveNewsType() {
+                    //需要进行新增的识别和修改的识别：当typeID为空时，进行新增。typeID有值时，进行修改。
+                    var flag = $("input[name='typeID']").val();
+                    if (flag == "") {
+                        $('#fm').form('submit', {
+                            url: url,
+                            onSubmit: function () {
+                                return $(this).form('validate');
+                            },
+                            success: function (result) {
+                                var result = eval('(' + result + ')');
+                                //需要注意数据格式
+                                if (result.errorMsg) {
+                                    $.messager.show({
+                                        title: 'Error',
+                                        msg: result.errorMsg
+                                    });
+                                } else {
+                                    $('#dlg').dialog('close');		// close the dialog
+                                    $('#dg').datagrid('reload');	// reload the user data
+                                }
+                            }
+                        });
+
+                    } else {
+
+                        $.ajax({
+                            url: url + "?" + $("#fm").serialize(),
+                            type: "put",
+                            // data: $("#fm").serializeArray(),
+                            dataType: "json",
+                            success: function (result) {
+
+                                $('#dlg').dialog('close');		// close the dialog
+                                $('#dg').datagrid('reload');	// reload the user data
+                            }
+                        });
+
+                    }
+
+
+                }
+
+
+                function deleteNewsType() {
+                    url = './api/v1.0/NewsType';
+                    var row = $('#dg').datagrid('getSelected');
+                    console.log("row："+row);
+                    if (row) {
+                        $.messager.confirm('Confirm', '你确定要删除该新闻类别吗？', function (r) {
+                            if (r) {
+                                $.ajax({
+                                    url: url + "?typeID=" + row.typeID,
+                                    type: "delete",
+                                    // data: $("#fm").serializeArray(),
+                                    dataType: "json",
+                                    success: function (result) {
+                                        $('#dg').datagrid('reload');	// reload the user data
+                                    }
+                                });
+
+
+                            }
+                        });
+                    }
+                }
+
+
+                $(function () {
+                    $('#dlg').dialog('close');
+
+                    var pager = $('#dg').datagrid({
+                        title: "新闻类别表管理",
+                        rownumbers: true,
+                        singleSelect: true,
+                        pagination: true,
+                        toolbar: "#toolbar",
+                        pageSize: 5,
+                        pageList: [5, 10, 20],
+                        url: './api/v1.0/NewsType',
+                        method: 'get'
+                    }).datagrid('getPager');	// get the pager of datagrid
+
+
+                })
+            </script>
+
+        </div>
+    </div>
+
+    <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        © layui.com - 底部固定区域
+    </div>
+</div>
+
+<script src="./layUIsrc/layui.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+</script>
+</body>
+</html>

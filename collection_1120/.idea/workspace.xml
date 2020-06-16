@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="60132035-e1de-434b-b04a-06467582241e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TrHGpWeusHWjzEodW6pm5F94cK" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="internet2" />
+      <recent name="fileAndIO2_1128.serializable1" />
+      <recent name="fileAndIO2_1128.serializable" />
+      <recent name="linkedList" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/aabb" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TestSou">
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sousou.business.A" />
+      <module name="collection_1120" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sousou.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sousou.utils.CardUtil" />
+      <module name="collection_1120" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sousou.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.xml_1206.DomPerson.Test" />
+      <module name="collection_1120" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="course.xml_1206.DomPerson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.xml_1205.Test2" />
+      <module name="collection_1120" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="course.xml_1205.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xml_1206.Dom4j.Test2" />
+      <module name="collection_1120" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xml_1206.Dom4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSou" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sousou.business.TestSou" />
+      <module name="collection_1120" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sousou.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestSou" />
+        <item itemvalue="Application.CardUtil" />
+        <item itemvalue="Application.A" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Test2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60132035-e1de-434b-b04a-06467582241e" name="Default Changelist" comment="" />
+      <created>1574211200021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574211200021</updated>
+      <workItem from="1574211201192" duration="9915000" />
+      <workItem from="1574298612274" duration="7595000" />
+      <workItem from="1574316394755" duration="7768000" />
+      <workItem from="1574329633982" duration="9000" />
+      <workItem from="1574333903389" duration="2190000" />
+      <workItem from="1574389417070" duration="1228000" />
+      <workItem from="1574402815980" duration="10850000" />
+      <workItem from="1574471542104" duration="1670000" />
+      <workItem from="1574493923736" duration="6412000" />
+      <workItem from="1574641551501" duration="26907000" />
+      <workItem from="1574748904168" duration="11381000" />
+      <workItem from="1574813955527" duration="722000" />
+      <workItem from="1574814936730" duration="6768000" />
+      <workItem from="1574839023823" duration="6688000" />
+      <workItem from="1574905037972" duration="5591000" />
+      <workItem from="1574921403475" duration="28640000" />
+      <workItem from="1575250814857" duration="134425000" />
+      <workItem from="1576132173196" duration="12627000" />
+      <workItem from="1576289888214" duration="6038000" />
+      <workItem from="1580624687582" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/course/collection1_1120/arrayList/News_ArrayList.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
